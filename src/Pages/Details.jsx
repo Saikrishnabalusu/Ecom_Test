@@ -13,7 +13,7 @@ function Details() {
   // product = products.filter((product)=> product.id === productId )
 
   return (
-    <div className='w-[760px] h-[760px] mx-auto my-auto flex justify-between items-center'>
+    <div className='w-[760px] h-[760px] mx-auto my-auto flex justify-between items-center select-none'>
         <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcnRzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" className='h-[40%] w-[40%] rounded-full object-cover mix-blend-multiply ' alt="" />
         <div className="w-[50%]   text-black">
             <h1 className='text-black text-2xl font-semibold'> Title</h1>

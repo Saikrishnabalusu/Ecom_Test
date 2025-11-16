@@ -15,7 +15,7 @@ function Home() {
   return (<>
   <NavBar></NavBar>
   <Banner></Banner>
-    <div className='flex w-screen h-auto justify-center items-center gap-3 flex-wrap bg-violet-100 py-8 '>
+    <div className='flex w-screen h-auto justify-center items-center gap-3 flex-wrap bg-violet-100 py-8 select-none'>
      {products.map( product=>
      <Card  key={product.id} id = {product.id} image={product.image} price={product.price} title={product.title} rating={product.rating.rate}/>) }
     </div>

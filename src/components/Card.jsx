@@ -5,7 +5,7 @@ function Card({image,price,title,...props}) {
   
   return (
     <Link to= {`/Details/${props.id}`}> 
-    <div className='w-44 h-56 border-2 ml-2 mt-2  border-slate-500 rounded-md cursor-pointer' >
+    <div className='w-44 h-56 border-2 ml-2 mt-2  border-slate-500  shadow-2xl rounded-md cursor-pointer select-none' >
         <img src={image} alt="image" className='w-full h-[60%] object-cover rounded-t-md' />
         <h1 className='px-2 text-ellipsis line-clamp-1 text-neutral-500'>{title}</h1>
         <h1 className='px-2 font-semibold'> Rs.{price}/- </h1>
