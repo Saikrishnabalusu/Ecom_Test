@@ -3,14 +3,19 @@ import Card from '../components/Card'
 import Banner from '../components/Banner'
 import axios from "axios"
 import { useEffect, useState } from 'react'
+import { getProducts } from '../Store/productsSlice'
+import { useDispatch, useSelector } from 'react-redux'
+
  
 function Home() {
-  const [products,setProducts] = useState([])
+const dispatch = useDispatch();
+const {products} = useSelector((state)=>state.products)
+  // const [products,setProducts] = useState([])
   
   useEffect(()=>{
-    
-    axios.get('https://fakestoreapi.com/products').then(response => setProducts(response.data))
-  },[])
+    dispatch(getProducts())
+    // axios.get('https://fakestoreapi.com/products').then(response => setProducts(response.data))
+  },[dispatch])
 
   return (<>
   <NavBar></NavBar>
